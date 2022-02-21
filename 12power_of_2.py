@@ -1,17 +1,17 @@
 
 
 def power_of_two(n):
-
     counter = 0
     while n > 1:
         if n % 2 == 0:
             n = n / 2
-            counter = counter + 1
+            counter += 1
         else:
-            return False
-    print("n power of two: True")
-    return counter
+            return False, None
+    return True, counter
 
 
-if __name__ == "__main__":
-    print('power: ', power_of_two(8))
+if name == "main":
+    for i in ([1, 2, 64, 1024, 3]):
+        print(f'Is {i} power of two: ', power_of_two(i))
+        
